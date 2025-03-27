@@ -1,0 +1,129 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0;
+    --light-grey:rgba(155, 155, 155, 0.55);
+    --white:  rgb(255, 255, 255);
+    --section-padding: 42px;
+    --highlight: rgb(69, 102, 72);
+    --standard-shadow: 0px 3px 5px var(--light-grey);
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+}
+
+#logo {
+    font-family: NorseBold;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 330px;
+    padding: 25px 0px;
+}
+
+button {
+    width: 210px;
+    font-weight: 700;
+    padding: 14px 0px;
+    color: var(--white);
+    background-color: var(--highlight);
+    border-radius: 10px;
+    box-shadow: var(--standard-shadow);
+}
+
+#logo p {
+    color: var(--white);
+}
+
+aside {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    height: 100vh;
+    background-image: url(/images/pexels-plant.jpg);
+    background-size: 2000px;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+#intro {
+    font-size: 1.25rem;
+    width: 600px;
+}
+
+section p, section button {
+    margin-left: var(--section-padding);
+}
+
+section {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+form { 
+    box-shadow: var(--standard-shadow);
+    border: solid 1px var(--light-grey);
+    margin: 15px 0px 25px;
+    padding: 20px var(--section-padding) 30px;
+}
+
+.form-category{
+    display: flex;
+    gap: 65px;
+}
+
+label {
+    font-size: .80rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    color: rgba(118, 118, 118, 1);
+}
+
+input {
+    width: 250px;
+    border: solid 1.5px var(--light-grey);
+    border-radius: 6px;
+    padding: 5px 12px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--highlight);
+    box-shadow: var(--standard-shadow);
+}
+
+input:invalid {
+    border: solid 1.5px rgb(253, 0, 0);
+}
+
+#returning-user {
+    margin-top: 20px;
+}
+
+#returning-user a, #returning-user a:visited {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--highlight);
+}
+
+
